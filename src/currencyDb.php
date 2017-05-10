@@ -11,6 +11,9 @@
  *
  * @author Buffon
  */
+
+namespace Tbotee\CurAPI; 
+ 
 class CurrencyDb {
     
     
