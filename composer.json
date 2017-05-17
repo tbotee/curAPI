@@ -1,8 +1,0 @@
-{
-    "name": "tbotee/curAPI",
-    "autoload": {
-        "psr-0" : {
-            "tbotee\\curAPI" : "src"
-        }
-    }
-}

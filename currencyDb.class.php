@@ -104,9 +104,9 @@ class CurrencyDb {
     {
         $url = $this->hostUrl . '?'
                 . 'action=getCurrencyValues&'
-                . 'date=' . urlencode(json_encode($this->date)) . '&'
-                . 'currencyTypes=' . urlencode(json_encode($this->currencyTypes)) . '&'
-                . 'institutes=' . urlencode(json_encode($this->institutes));
+                . 'date=' . urlencode(serialize($this->date)) . '&'
+                . 'currencyTypes=' . urlencode(serialize($this->currencyTypes)) . '&'
+                . 'institutes=' . urlencode(serialize($this->institutes));
         
         $result = $this->getPageContent($url);
         
